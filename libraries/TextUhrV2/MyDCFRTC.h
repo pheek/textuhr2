@@ -1,5 +1,5 @@
 /**
- * @author  phi@gress.ly + gemini
+ * @author  phi@freimann.eu + gemini
  * @date    2026_11_22
  * @license GPL (www.gnu.org/licenses/gpl-3.0.de.html)
  * Kapselt DCF77-Empfang und DS3231-RTC (via RTClib) mit drei Zuständen:
@@ -29,13 +29,11 @@
 #ifdef DEBUG_METHOD
 	#define RTC_MAX_VALID_SECS (2UL * 60UL * 60UL)           // 2 Stunden
 #else
-	#define RTC_MAX_VALID_SECS (14UL * 24UL * 60UL * 60UL) // 2 Wochen
+	#define RTC_MAX_VALID_SECS (14UL * 24UL * 60UL * 60UL)   // 2 Wochen
 #endif
 
 class MyDCFRTC {
 public:
-
-
 
 	enum State {
 		STATE_UNREADY,     // Keine gültige Zeit: Shift-Register aus, DCF blinkt via Transistor
@@ -45,7 +43,7 @@ public:
 
 	// constructor with PIN to listen to DCF77 signal
 	MyDCFRTC(int dcfPin);
-	
+
 	void update();
 
 	// True, sobald eine Zeit angezeigt werden soll (STATE_RTC_FRESH oder STATE_RTC_EXPIRED)
@@ -54,10 +52,9 @@ public:
 	// True nur bei STATE_RTC_FRESH ("ES IST" dauerhaft an, kein DCF-Blinken)
 	bool isRtcFresh();
 
-	State getState();
-
 	// returns 1..12
 	int getHour();
+
 	// returns 0..59
 	int getMinute();
 
@@ -71,6 +68,7 @@ private:
 	uint64_t      _lastSyncUnix; // Zeitpunkt der letzten DCF-Synchronisation (0 = noch nie)
 	unsigned long _lastRtcReadMs;
 
+	State getState();
 	uint64_t currentUnixTime();
 	void evaluateState(uint64_t nowUnix);
 };

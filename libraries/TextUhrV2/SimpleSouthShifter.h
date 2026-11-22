@@ -1,5 +1,5 @@
 /**
- * @author  phi@gress.ly
+ * @author  phi@freimann.eu
  * @date    V0 2016-01-29 (simpleShifter)
  * @date    V1 2026-10-25 (simpleSouthShifter)
  * 
@@ -81,7 +81,6 @@ public:
 	 * Clear all Bits
 	 */
 	void writeAllZeros();
-
 
 
 private:

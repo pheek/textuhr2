@@ -1,5 +1,5 @@
 /**
- * @author  phi@gress.ly
+ * @author  phi@freimann.eu
  * @date    2026_10_19
  * @license GPL (www.gnu.org/licenses/gpl-3.0.de.html)
  * Siehe MyDCF.h für Details.

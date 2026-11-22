@@ -7,7 +7,7 @@
    viewBox="0 0 703.12505 421.87505"
    id="svg2"
    version="1.1"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
    sodipodi:docname="texte.svg"
    inkscape:export-filename="texte.png"
    inkscape:export-xdpi="600"
@@ -35,15 +35,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.6696973"
-     inkscape:cx="433.01262"
-     inkscape:cy="96.724119"
+     inkscape:zoom="0.41742433"
+     inkscape:cx="89.836642"
+     inkscape:cy="-196.44279"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
-     inkscape:window-width="3708"
-     inkscape:window-height="2117"
-     inkscape:window-x="64"
+     inkscape:window-width="1820"
+     inkscape:window-height="1055"
+     inkscape:window-x="50"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:showpageshadow="2"
@@ -75,278 +75,282 @@
        id="rect4226"
        width="701.95404"
        height="420.70401"
-       x="40.741756"
-       y="8.9426785" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.415px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.761133;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="52.21096"
-       y="238.25679"
-       id="text3418"
-       transform="scale(1.9820065,0.50453921)"><tspan
-         sodipodi:role="line"
-         id="tspan3420"
-         x="52.21096"
-         y="238.25679"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:103.918px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.761133;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ES IST</tspan></text>
+       x="40.74176"
+       y="8.9426813" />
     <g
-       id="g22"
-       transform="translate(12.811633,-2.4388013)">
+       id="g2"
+       transform="translate(0,4.8425351)">
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.0698px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.622868;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="115.82825"
-         y="153.38455"
-         id="text3418-0"
-         transform="scale(0.91570141,1.092059)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.7524px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.692416;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="85.398666"
+         y="209.9848"
+         id="text3418"
+         transform="scale(1.8030655,0.55461103)"><tspan
            sodipodi:role="line"
-           id="tspan3420-2"
-           x="115.82825"
-           y="153.38455"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:34.4544px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.622868;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ZEHN</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.1268px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.625223;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="219.41763"
-         y="156.58377"
-         id="text3418-2-3"
-         transform="scale(0.93414926,1.0704927)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-3"
-           x="219.41763"
-           y="156.58377"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2985px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.625223;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">VIERTEL</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5368px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.600844;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="365.83221"
-         y="157.28583"
-         id="text3418-2-2"
-         transform="scale(0.93997154,1.063862)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-5"
-           x="365.83221"
-           y="157.28583"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:34.5487px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.600844;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ZWANZIG</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.6354px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.646244;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="482.58078"
-         y="179.0941"
-         id="text3418-2-4"
-         transform="scale(1.0612011,0.94232848)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-61"
-           x="482.58078"
-           y="179.0941"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.0465px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.646244;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">PUNKT</tspan></text>
-    </g>
-    <g
-       id="g23"
-       transform="translate(9.9906114,1.1504289)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.3912px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.718809;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="109.71916"
-         y="205.41449"
-         id="text3418-2"
-         transform="scale(0.97732287,1.0232033)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3"
-           x="109.71916"
-           y="205.41449"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:36.5414px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.718809;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">FÜNF</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.0626px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.622568;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="210.08665"
-         y="214.07881"
-         id="text3418-2-1"
-         transform="scale(1.0138908,0.98629951)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-1"
-           x="210.08665"
-           y="214.07881"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:36.9583px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.622568;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">VOR</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.7318px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.60889;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="296.94763"
-         y="221.71957"
-         id="text3418-2-7"
-         transform="scale(1.0544555,0.94835675)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-6"
-           x="296.94763"
-           y="221.71957"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.7291px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.60889;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">NACH</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1982px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.586842;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="421.8027"
-         y="223.15707"
-         id="text3418-2-24"
-         transform="scale(1.0593599,0.94396626)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-7"
-           x="421.8027"
-           y="223.15707"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.6713px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.586842;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">HALB</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5788px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.602581;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="541.54523"
-         y="221.55782"
-         id="text3418-2-72"
-         transform="scale(1.0536831,0.94905193)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-74"
-           x="541.54523"
-           y="221.55782"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.6553px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.602581;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">EINS</tspan></text>
-    </g>
-    <g
-       id="g1001">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4791px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.515786;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="125.05737"
-         y="245.92596"
-         id="text3418-2-8"
-         transform="scale(0.95056952,1.0520009)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-4"
-           x="125.05737"
-           y="245.92596"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:36.0249px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.515786;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ZWEI</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.1324px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.501461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="220.69691"
-         y="259.10318"
-         id="text3418-2-89"
-         transform="scale(1.0016569,0.99834583)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-72"
-           x="220.69691"
-           y="259.10318"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.95px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.501461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">DREI</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.886px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.532604;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="306.0896"
-         y="273.12311"
-         id="text3418-2-13"
-         transform="scale(1.0558558,0.94709903)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-46"
-           x="306.0896"
-           y="273.12311"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.9894px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.532604;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">VIER</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.0066px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.702925;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="452.32751"
-         y="246.97919"
-         id="text3418-2-6"
-         transform="scale(0.95637669,1.0456131)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-48"
-           x="452.32751"
-           y="246.97919"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.7341px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.702925;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">FÜNF</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.272px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.631232;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="504.36987"
-         y="274.81888"
-         id="text3418-2-9"
-         transform="scale(1.0638123,0.94001541)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-0"
-           x="504.36987"
-           y="274.81888"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.9831px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.631232;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">SECHS</tspan></text>
-    </g>
-    <g
-       id="g25"
-       transform="translate(8.7720371,9.1795592)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.4662px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.804576;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="80.993675"
-         y="394.92416"
-         id="text3418-2-9-0"
-         transform="scale(1.3381794,0.74728395)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-0-6"
-           x="80.993675"
-           y="394.92416"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48.8316px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.804576;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">SIEBEN</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5034px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.723453;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="268.63324"
-         y="367.51407"
-         id="text3418-2-9-3"
-         transform="scale(1.2536958,0.79764166)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-0-4"
-           x="268.63324"
-           y="367.51407"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:45.9481px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.723453;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ACHT</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.1648px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.626794;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="460.80008"
-         y="336.97308"
-         id="text3418-2-9-31"
-         transform="scale(1.1423035,0.87542411)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-0-69"
-           x="460.80008"
-           y="336.97308"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.0712px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.626794;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">NEUN</tspan></text>
-    </g>
-    <g
-       id="g26"
-       transform="matrix(1.0162345,0,0,1,13.313628,1.8750001)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.0476px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.704619;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="81.919083"
-         y="442.04706"
-         id="text3418-2-9-8"
-         transform="scale(1.2680284,0.78862586)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-0-0"
-           x="81.919083"
-           y="442.04706"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:47.7115px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.704619;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ZEHN</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.745px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.65078;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="239.34099"
-         y="443.70703"
-         id="text3418-2-9-6"
-         transform="scale(1.2720711,0.78611958)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-0-1"
-           x="239.34099"
-           y="443.70703"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48.2489px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.65078;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ELF</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.1853px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.875648;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="364.4949"
-         y="423.65335"
-         id="text3418-2-9-00"
-         transform="scale(1.2163516,0.82213071)"><tspan
-           sodipodi:role="line"
-           id="tspan3420-3-0-16"
-           x="364.4949"
-           y="423.65335"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:45.3688px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.875648;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ZWÖLF</tspan></text>
+           id="tspan3420"
+           x="85.398666"
+           y="209.9848"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:94.536px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.692416;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ES IST</tspan></text>
+      <g
+         id="g1">
+        <g
+           id="g22"
+           transform="translate(13.77964,-2.4388013)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.0698px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.622868;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="115.82825"
+             y="153.38455"
+             id="text3418-0"
+             transform="scale(0.91570141,1.092059)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-2"
+               x="115.82825"
+               y="153.38455"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:34.4544px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.622868;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ZEHN</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.1268px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.625223;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="219.41763"
+             y="156.58377"
+             id="text3418-2-3"
+             transform="scale(0.93414926,1.0704927)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-3"
+               x="219.41763"
+               y="156.58377"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2985px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.625223;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">VIERTEL</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5368px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.600844;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="365.83221"
+             y="157.28583"
+             id="text3418-2-2"
+             transform="scale(0.93997154,1.063862)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-5"
+               x="365.83221"
+               y="157.28583"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:34.5487px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.600844;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ZWANZIG</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.6354px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.646244;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="482.58078"
+             y="179.0941"
+             id="text3418-2-4"
+             transform="scale(1.0612011,0.94232848)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-61"
+               x="482.58078"
+               y="179.0941"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.0465px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.646244;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">PUNKT</tspan></text>
+        </g>
+        <g
+           id="g23"
+           transform="translate(10.958631,1.1504289)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.3912px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.718809;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="109.71916"
+             y="205.41449"
+             id="text3418-2"
+             transform="scale(0.97732287,1.0232033)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3"
+               x="109.71916"
+               y="205.41449"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:36.5414px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.718809;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">FÜNF</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.0626px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.622568;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="210.08665"
+             y="214.07881"
+             id="text3418-2-1"
+             transform="scale(1.0138908,0.98629951)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-1"
+               x="210.08665"
+               y="214.07881"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:36.9583px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.622568;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">VOR</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.7318px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.60889;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="296.94763"
+             y="221.71957"
+             id="text3418-2-7"
+             transform="scale(1.0544555,0.94835675)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-6"
+               x="296.94763"
+               y="221.71957"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.7291px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.60889;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">NACH</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1982px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.586842;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="421.8027"
+             y="223.15707"
+             id="text3418-2-24"
+             transform="scale(1.0593599,0.94396626)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-7"
+               x="421.8027"
+               y="223.15707"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.6713px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.586842;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">HALB</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5788px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.602581;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="541.54523"
+             y="221.55782"
+             id="text3418-2-72"
+             transform="scale(1.0536831,0.94905193)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-74"
+               x="541.54523"
+               y="221.55782"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.6553px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.602581;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">EINS</tspan></text>
+        </g>
+        <g
+           id="g1001"
+           transform="translate(0.96802982)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.4791px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.515786;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="125.05737"
+             y="245.92596"
+             id="text3418-2-8"
+             transform="scale(0.95056952,1.0520009)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-4"
+               x="125.05737"
+               y="245.92596"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:36.0249px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.515786;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ZWEI</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.1324px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.501461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="220.69691"
+             y="259.10318"
+             id="text3418-2-89"
+             transform="scale(1.0016569,0.99834583)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-72"
+               x="220.69691"
+               y="259.10318"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.95px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.501461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">DREI</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.886px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.532604;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="306.0896"
+             y="273.12311"
+             id="text3418-2-13"
+             transform="scale(1.0558558,0.94709903)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-46"
+               x="306.0896"
+               y="273.12311"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:39.9894px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.532604;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">VIER</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.0066px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.702925;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="452.32751"
+             y="246.97919"
+             id="text3418-2-6"
+             transform="scale(0.95637669,1.0456131)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-48"
+               x="452.32751"
+               y="246.97919"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.7341px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.702925;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">FÜNF</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.272px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.631232;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="504.36987"
+             y="274.81888"
+             id="text3418-2-9"
+             transform="scale(1.0638123,0.94001541)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-0"
+               x="504.36987"
+               y="274.81888"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.9831px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.631232;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">SECHS</tspan></text>
+        </g>
+        <g
+           id="g25"
+           transform="translate(9.7400192,9.1795592)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.4662px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.804576;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="80.993675"
+             y="394.92416"
+             id="text3418-2-9-0"
+             transform="scale(1.3381794,0.74728395)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-0-6"
+               x="80.993675"
+               y="394.92416"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48.8316px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.804576;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">SIEBEN</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5034px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.723453;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="268.63324"
+             y="367.51407"
+             id="text3418-2-9-3"
+             transform="scale(1.2536958,0.79764166)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-0-4"
+               x="268.63324"
+               y="367.51407"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:45.9481px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.723453;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ACHT</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.1648px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.626794;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             x="460.80008"
+             y="336.97308"
+             id="text3418-2-9-31"
+             transform="scale(1.1423035,0.87542411)"><tspan
+               sodipodi:role="line"
+               id="tspan3420-3-0-69"
+               x="460.80008"
+               y="336.97308"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.0712px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.626794;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">NEUN</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.1854px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.710316;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="93.753944"
+           y="448.01758"
+           id="text3418-2-9-8"
+           transform="scale(1.2782799,0.7823013)"><tspan
+             sodipodi:role="line"
+             id="tspan3420-3-0-0"
+             x="93.753944"
+             y="448.01758"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48.0972px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.710316;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ZEHN</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.8723px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.656041;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="252.41302"
+           y="449.69861"
+           id="text3418-2-9-6"
+           transform="scale(1.2823552,0.77981512)"><tspan
+             sodipodi:role="line"
+             id="tspan3420-3-0-1"
+             x="252.41302"
+             y="449.69861"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48.639px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.656041;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ELF</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3566px;line-height:0%;font-family:Quercus;-inkscape-font-specification:Quercus;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.882727;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="379.08893"
+           y="429.3775"
+           id="text3418-2-9-00"
+           transform="scale(1.2261853,0.81553743)"><tspan
+             sodipodi:role="line"
+             id="tspan3420-3-0-16"
+             x="379.08893"
+             y="429.3775"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:45.7356px;line-height:1.25;font-family:Quercus;-inkscape-font-specification:'Quercus Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.882727;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ZWÖLF</tspan></text>
+      </g>
     </g>
     <text
        xml:space="preserve"
@@ -354,12 +358,12 @@
        id="text3"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor Bold';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);display:inline;fill:none;fill-opacity:1;stroke:#fb1bff;stroke-width:11.3386;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.77165;stroke-opacity:1"
-       d="M 683.2296,19.641495 V 47.622637"
+       style="fill:none;stroke:#ffffff;stroke-width:1.67473;stroke-opacity:1"
+       d="M 694.9818,9.8251196 V 34.82857"
        id="path1057" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:1.77165;stroke-opacity:1"
-       d="m 106.66707,29.603322 v 27.98114"
+       d="m 90.744885,10.632985 v 27.98114"
        id="path1057-7" />
     <rect
        style="fill:none;stroke:none;stroke-width:1.76066;stroke-opacity:1"
@@ -370,15 +374,15 @@
        y="79.550003" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:1.77165;stroke-opacity:1"
-       d="M 683.2296,382.26976 V 410.2509"
+       d="m 695.08106,400.2473 v 27.98114"
        id="path1057-5" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:1.77165;stroke-opacity:1"
-       d="M 101.97957,382.26976 V 410.2509"
+       d="m 90.549217,399.73601 v 27.98114"
        id="path1057-7-6" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:1.77165;stroke-opacity:1"
-       d="m 693.36708,70.180497 h 29.61933"
+       d="m 711.39481,54.017555 h 29.61933"
        id="path2157"
        sodipodi:nodetypes="cc" />
     <path
@@ -388,10 +392,10 @@
        inkscape:radius="0"
        inkscape:original="M 205.53125 70.017578 L 235.15039 70.017578 L 205.53125 70.017578 z "
        d="m 205.53125,70.017578 h 29.61914 z"
-       transform="translate(-145.9193,0.16291851)" />
+       transform="translate(-164.50851,-16.000023)" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:1.77165;stroke-opacity:1"
-       d="m 695.11614,365.49301 h 29.61933"
+       d="m 712.02092,386.27794 h 29.61933"
        id="path2157-9"
        sodipodi:nodetypes="cc" />
     <path
@@ -401,6 +405,6 @@
        inkscape:radius="0"
        inkscape:original="M 205.53125 70.017578 L 235.15039 70.017578 L 205.53125 70.017578 z "
        d="m 205.53125,70.017578 h 29.61914 z"
-       transform="translate(-151.67024,295.47543)" />
+       transform="translate(-163.80244,316.31056)" />
   </g>
 </svg>

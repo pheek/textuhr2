@@ -1,11 +1,11 @@
 /**
  * @author  phi@freimann.eu + gemini
  * @date    2026_11_22
- * @version 2.1
+ * @version 2.2
  * @license GPL (www.gnu.org/licenses/gpl-3.0.de.html)
  */
 
-// DEBUG ONLY: Provides "DEBUG_METHOD"
+// DEBUG ONLY: Provides define "DEBUG_METHOD"
 #include "My_Debug.h"
 
 // get time or info, that the time is not ready
@@ -74,6 +74,7 @@ SimpleSouthShifter simpleSouthShifter(NUM_SHIFT_REGISTERS, SHIFT_DATA_PIN, SHIFT
 #define LED_STUNDE_ZWOELF  19
 */
 
+
 // init arduino
 void setup() {
 	#ifdef DEBUG_METHOD
@@ -81,20 +82,13 @@ void setup() {
 	#endif
 
 	myDCFRTC = new MyDCFRTC(DCF_INPUT_PIN);
-
 	pinMode(TIME_VISIBLE_PIN, OUTPUT);
-	//	digitalWrite(TIME_VISIBLE_PIN, LOW);
-
-  /* hier könnten beim Start alle LEDs auf 0 (off)
-	 * gesetzt werden, doch das wird sowieso gleich
-	 * im loop getan.
-	 */
-	// simpleSouthShifter.writeAllZeros();
 }
+
 
 #ifdef DEBUG_METHOD
 /**
- * Zeitausgabe am serial Port für debug Zwecke.
+ * Print time at arduino serial port only for debug purpose.
  */
 void debugPrintTime(int h, int m) {
 	Serial.print("debugPrintTime(): ");
@@ -105,17 +99,19 @@ void debugPrintTime(int h, int m) {
 }
 #endif
 
+
+// arduinos main loop:
 void loop() {
 	myDCFRTC->update();
 
-	// 1. "ES IST" dauerhaft nur wenn DCF frisch ist; sonst LOW -> DCF-Transistor blinkt
+	// 1. "ES IST" (IT IS) only lights permanently, when RTC has a fresh signal from the DCF
 	if (myDCFRTC->isRtcFresh()) {
 		digitalWrite(TIME_VISIBLE_PIN, HIGH);
 	} else {
 		digitalWrite(TIME_VISIBLE_PIN, LOW);
 	}
-	
-	// 2. Uhrzeit anzeigen, sobald RTC-Zeit gültig ist (auch während DCF-Blinken!)
+
+	// 2. Show time (if RTC has a valid time, even if it is not fresh)
 	if (myDCFRTC->hasValidTime()) {
 		showTimeIfReady();
 
@@ -126,9 +122,8 @@ void loop() {
 		}
 		#endif
 
-		delay(100);
+		delay(100); // cool down arduino a bit.
 	} else { // no valid Time (even no unfresh)
-		
 		simpleSouthShifter.writeAllZeros();
 
 		#ifdef DEBUG_METHOD
@@ -140,13 +135,18 @@ void loop() {
 	}
 }
 
+
+/**
+ * Evaluate pin number for actual hour.
+ */
 int hourPin(int hour) {
-	return hour - 1 + LED_STUNDE_EINS;
+	return hour - 1 + LED_STUNDE_EINS; // all other hours are +1 on their pin numbers each
 }
 
 void ledON(int pin) {
 	simpleSouthShifter.onBit(pin);
 }
+
 
 void showTimeIfReady() {
 	simpleSouthShifter.clearData();
@@ -156,12 +156,22 @@ void showTimeIfReady() {
 	simpleSouthShifter.writeData();
 }
 
+/**
+ * Register hours and minute-Pins to the shift registers.
+ * The "writeData()" is done within the method "showTimeIfReady()".
+ */
 void showHoursAndMinutes() {
 	int min  = myDCFRTC->getMinute();
 	int hour = myDCFRTC->getHour();
 	schalteStundenLEDs(hour, min);
 	schalteMinutenLEDs(min);
 }
+
+
+/**
+ * Die folgenden Methoden sind deutsch, denn die Uhrzeit wird ja
+ * auch in deutsch angezeigt.
+ */
 
 void schalteStundenLEDs(int stunde, int min) {
 	if (min > 23) {
@@ -173,13 +183,21 @@ void schalteStundenLEDs(int stunde, int min) {
 	ledON(hourPin(stunde));
 }
 
+
+/**
+ * Hier werden die LEDs auf den Shift-Registern angesprochen.
+ * input:
+ *   int min: Die aktuelle Minute der Systemzeit, die via DCF77 geholt wurde.
+ * Da nur im ca. 5 Min takt geschaltet wird, reicht es , wenn der Parameter min "imZeitfenster" der
+ * aktuellen 5 Minuten liegt.
+ */
 void schalteMinutenLEDs(int min) {
 	if      (imZeitfenster(min, + 5)) { ledON(LED_MINUTE_FUENF  ); ledON(LED_NACH);                  }
 	else if (imZeitfenster(min, +10)) { ledON(LED_MINUTE_ZEHN   ); ledON(LED_NACH);                  }
 	else if (imZeitfenster(min, +15)) { ledON(LED_MINUTE_VIERTEL); ledON(LED_NACH);                  }
 	else if (imZeitfenster(min, +20)) { ledON(LED_MINUTE_ZWANZIG); ledON(LED_NACH);                  }
 	else if (imZeitfenster(min, +25)) { ledON(LED_MINUTE_FUENF  ); ledON(LED_VOR ); ledON(LED_HALB); }
-	else if (imZeitfenster(min, +30)) {                                              ledON(LED_HALB); }
+	else if (imZeitfenster(min, +30)) {                                             ledON(LED_HALB); }
 	else if (imZeitfenster(min, +35)) { ledON(LED_MINUTE_FUENF  ); ledON(LED_NACH); ledON(LED_HALB); }
 	else if (imZeitfenster(min, +40)) { ledON(LED_MINUTE_ZWANZIG); ledON(LED_VOR );                  }
 	else if (imZeitfenster(min, +45)) { ledON(LED_MINUTE_VIERTEL); ledON(LED_VOR );                  }
@@ -188,6 +206,23 @@ void schalteMinutenLEDs(int min) {
 	else    /* >=59 && <= 3 */     { ledON(LED_PUNKT         );                                   }
 }
 
+/**
+ * 5 Minuten - Zeitfenster
+ * in : min                    : Aktuelle Uhrzeit von 0..59
+ *    : fuenfMinutenIntervall  : 5, 10, 15, 20, etc. bis 55
+ * Bei 3 Minuten nach xy sage ich noch nicht es ist 'fünf nach'.
+ * Bei 4 Minuten eigentlich auch noch nicht, aber bei 59 Sekunden
+ * kann ich mich auf den Standpunkt stellen, dass die Zeit nun genug
+ * nahe an den nächsten fünf Minuten ist. Daher wechsle ich
+ * immer exakt bei 4, 9, 14, 19, ... Minuten auf den nächsten 'Fünfer'.
+ *
+ * output: true, genau dann wenn:
+ *
+ *    min im Zeitfenster der "fuenfMinuten Intervall (Genauigkeit)" liegt.
+ *
+ * Beispiel: Zeit Nahe an 45 -> true bei min=44, 45, 46, 47, und 48
+ *                              false bei allen anderen Zahlen.
+ */
 boolean imZeitfenster(int min, int fuenfMinutenIntervall) {
 	return min >= fuenfMinutenIntervall - 1 &&
 	       min <= fuenfMinutenIntervall + 3;

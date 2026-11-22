@@ -1,7 +1,7 @@
 /**
- * @author  phi@gress.ly
- * @date    2016-02-17
- *
+ * @author  phi@freimann.eu
+ * @date    2026-11-22
+ * @version 2.2
  * @doku    see simpleSouthShifter.h
  * @license GPL (www.gnu.org/licenses/gpl-3.0.de.html)
  * --------------------
@@ -102,6 +102,9 @@ void SimpleSouthShifter::writeData() {
 	digitalWrite(_pinRCLK, HIGH); // latch
 }
 
+/**
+ * Helper method to clear all data and write them LOW to all outputs.
+ */
 void SimpleSouthShifter::writeAllZeros() {
 	clearData();
 	writeData();
