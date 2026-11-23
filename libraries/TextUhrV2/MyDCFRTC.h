@@ -2,7 +2,7 @@
  * @author  phi@freimann.eu + gemini
  * @date    2026_11_22
  * @license GPL (www.gnu.org/licenses/gpl-3.0.de.html)
- * Kapselt DCF77-Empfang und DS3231-RTC (via RTClib) mit drei Zuständen:
+ * Encapsulates DCF77 reception and DS3231 RTC (via RTClib) using three states:
  * STATE_UNREADY, STATE_RTC_FRESH, STATE_RTC_EXPIRED.
  */
 
@@ -15,62 +15,99 @@
 #include <RTClib.h>
 
 #include <DCF77.h>
-#include <My_Debug.h>
+#include <My_Debug.h> // for DEBUG_METHOD define
 
 /**
- * RTC_MAX_VALID_SECS gibt an, nach wie vielen Sekunden die
- * Uhr in den Original-Zustand (searching) zurückfallen soll.
- * Dies soll eigentlich alle 2 Wochen geschehen, es sei denn,
- * es wurde in der Zwischenzeit ein neues DCF Signal empfangen,
- * dann wird "_lastSyncUnix" neu beschrieben und wir haben wieder "ewig"
- * Zeit, bis die nächsten zwei Wochen vergangen sind.
- * Dies kommt eigentlich erst zum Tragen, wenn wirklich während zwei Wochen kein DCF Signal empfangen wurde.
+ * DCF_MAX_VALID_SECS defines how many seconds after a valid DCF sync
+ * the clock stays in STATE_RTC_FRESH before switching to STATE_RTC_EXPIRED
+ * (keeping the time displayed while enabling DCF blink indication).
  */
 #ifdef DEBUG_METHOD
-	#define RTC_MAX_VALID_SECS (2UL * 60UL * 60UL)           // 2 Stunden
+	#define DCF_MAX_VALID_SECS (2UL * 60UL * 60UL)           // 2 hours
 #else
-	#define RTC_MAX_VALID_SECS (14UL * 24UL * 60UL * 60UL)   // 2 Wochen
+	#define DCF_MAX_VALID_SECS (14UL * 24UL * 60UL * 60UL) // 2 weeks
 #endif
+
+/**
+ * Interval in milliseconds to sync the RTC time into Arduino TimeLib.
+ * Important because getHour() and getMinute() read from Arduino TimeLib.
+ */
+#define SAVE_RTC_TO_ARDUINO_TIME_EVERY_X_MS 60000UL // one minute
+
+#define MIN_YEAR 2026
 
 class MyDCFRTC {
 public:
 
 	enum State {
-		STATE_UNREADY,     // Keine gültige Zeit: Shift-Register aus, DCF blinkt via Transistor
-		STATE_RTC_FRESH,   // RTC aktuell gestellt: Zeit an, TIME_VISIBLE_PIN HIGH (kein Blinken)
-		STATE_RTC_EXPIRED  // Letzter DCF-Sync älter als RTC_MAX_VALID_SECS: Zeit an + Blinken
+		STATE_UNREADY,     // No valid time: shift registers off, DCF blinks via transistor
+		STATE_RTC_FRESH,   // Recently synced via DCF: time on, TIME_VISIBLE_PIN HIGH (no blinking)
+		STATE_RTC_EXPIRED  // Last DCF sync older than DCF_MAX_VALID_SECS: time on + DCF blinking
 	};
 
-	// constructor with PIN to listen to DCF77 signal
+	// Constructor with pin connected to the DCF77 signal
 	MyDCFRTC(int dcfPin);
 
 	void update();
 
-	// True, sobald eine Zeit angezeigt werden soll (STATE_RTC_FRESH oder STATE_RTC_EXPIRED)
+	// True when a time should be displayed (STATE_RTC_FRESH or STATE_RTC_EXPIRED)
 	bool hasValidTime();
 
-	// True nur bei STATE_RTC_FRESH ("ES IST" dauerhaft an, kein DCF-Blinken)
+	// True only in STATE_RTC_FRESH ("ES IST" steadily on, no DCF blinking)
 	bool isRtcFresh();
 
-	// returns 1..12
+	// Returns 1..12
 	int getHour();
 
-	// returns 0..59
+	// Returns 0..59
 	int getMinute();
 
 
-
 private:
-	DCF77 *       _dcf;
-	RTC_DS3231    _rtc;
-	bool          _rtcOk;
-	State         _state;
-	uint64_t      _lastSyncUnix; // Zeitpunkt der letzten DCF-Synchronisation (0 = noch nie)
-	unsigned long _lastRtcReadMs;
+	DCF77 *       _dcf       ;  // Pointer to DCF77 object
+	RTC_DS3231    _rtc       ;  // DS3231 RTC object
+	bool          _rtcPresent;  // True if DS3231 initialized successfully: The chip is present and reacts to rtc.begin()
+	State         _state     ;  // Current state (see State enum)
 
-	State getState();
+	/**
+	 * Unix timestamp until which the last received DCF time is considered fresh.
+	 * 0 means no DCF signal has been received yet.
+	 */
+	uint64_t      _dcfTimeValidUntil;
+
+	/**
+	 * millis() timestamp at which the next RTC-to-Arduino time sync is due.
+	 * Every "some" milliseconds the RTC time is stored in the Arduino.
+	 * The following variable says, when it has been saved the last time
+	 * [in arduino.mills()].
+	 * see: SAVE_RTC_TO_ARDUINO_TIME_EVERY_X_MS
+	 * 0 means: arduino time is not valid!
+	 */
+	unsigned long _arduinoTimeValidUntil;
+
+
+	/**
+	 * Return current Unix time from the RTC (if initialized and valid),
+	 * otherwise fall back to Arduino TimeLib now().
+	 */
 	uint64_t currentUnixTime();
-	void evaluateState(uint64_t nowUnix);
+
+
+	/**
+	 * Update _state based on the current Unix timestamp.
+	 */
+	void setState(uint64_t nowUnix);
+
+
+	/**
+	 * Handle a newly received valid DCF timestamp:
+	 * - Update Arduino TimeLib time
+	 * - Update DS3231 RTC time
+	 * - Refresh _dcfTimeValidUntil and _arduinoTimeValidUntil
+	 * - Recalculate state
+	 */
+	void handleCorrectDCFSignalAndSetState(time_t correctDCFTime);
+
 };
 
 #endif
