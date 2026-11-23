@@ -23,7 +23,7 @@
  * (keeping the time displayed while enabling DCF blink indication).
  */
 #ifdef DEBUG_METHOD
-	#define DCF_MAX_VALID_SECS (2UL * 60UL * 60UL)           // 2 hours
+	#define DCF_MAX_VALID_SECS (2UL * 60UL * 60UL)         // 2 hours
 #else
 	#define DCF_MAX_VALID_SECS (14UL * 24UL * 60UL * 60UL) // 2 weeks
 #endif
@@ -32,7 +32,7 @@
  * Interval in milliseconds to sync the RTC time into Arduino TimeLib.
  * Important because getHour() and getMinute() read from Arduino TimeLib.
  */
-#define SAVE_RTC_TO_ARDUINO_TIME_EVERY_X_MS 60000UL // one minute
+#define SAVE_RTC_TO_ARDUINO_TIME_EVERY_X_MS 120000UL // two minutes
 
 #define MIN_YEAR 2026
 
@@ -64,10 +64,10 @@ public:
 
 
 private:
-	DCF77 *       _dcf       ;  // Pointer to DCF77 object
-	RTC_DS3231    _rtc       ;  // DS3231 RTC object
-	bool          _rtcPresent;  // True if DS3231 initialized successfully: The chip is present and reacts to rtc.begin()
-	State         _state     ;  // Current state (see State enum)
+	DCF77 *       _dcf       ; // Pointer to DCF77 object
+	RTC_DS3231    _rtc       ; // DS3231 RTC object
+	bool          _rtcPresent; // True if DS3231 initialized successfully: The chip is present and reacts to rtc.begin()
+	State         _state     ; // Current state (see State enum)
 
 	/**
 	 * Unix timestamp until which the last received DCF time is considered fresh.
@@ -88,7 +88,7 @@ private:
 
 	/**
 	 * Return current Unix time from the RTC (if initialized and valid),
-	 * otherwise fall back to Arduino TimeLib now().
+	 * otherwise fall back to Arduino TimeLib: now().
 	 */
 	uint64_t currentUnixTime();
 
@@ -108,6 +108,6 @@ private:
 	 */
 	void handleCorrectDCFSignalAndSetState(time_t correctDCFTime);
 
-};
+}; // end class MyDCFRTC
 
 #endif

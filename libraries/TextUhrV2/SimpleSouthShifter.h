@@ -2,25 +2,29 @@
  * @author  phi@freimann.eu
  * @date    V0 2016-01-29 (simpleShifter)
  * @date    V1 2026-10-25 (simpleSouthShifter)
- * 
+ *
  * @license GPL (www.gnu.org/licenses/gpl-3.0.de.html)
  *
  * Simple shift-register implementation for 74HC595 or similar.
  * ------------------------------------------------------------
  * Feature: Only (logical) Bits on "south" of the shift registers are counted.
- * 
- * eg. three registers (below: logical bits "l-bit" and physical bits "p-bit")
  *
- *p-bit      23                       15                      7
- *           QA                       QA                     QA
- *        --------------------    --------------------    --------------------
- *        QB QC QD QE QF QG QH    QB QC QD QE QF QG QH    QB QC QD QE QF QG QH
- *l-bit:   0  1  2  3  4  5  6     7  8  9 10 11 12 13    14 15 16 17 18 19 20
- *p-bit:  22 21 20 19 18 17 16    14 13 12 11 10  9  8     6  5  4  3  2  1  0 
+ * eg. three registers (below: logical bits are "l-bit" and physical bits are "p-bit")
  *
- * This class does not contain a remove or clear bit function.
- * It only contains a  * clearData() to clear all data,
- * an onBit() to set a specific bit and  at last a writeData()
+ *
+ * p-bit         23                       15                      7
+ *               QA                       QA                     QA
+ *         --------------------    --------------------    --------------------
+ *         QB QC QD QE QF QG QH    QB QC QD QE QF QG QH    QB QC QD QE QF QG QH
+ * l-bit:   0  1  2  3  4  5  6     7  8  9 10 11 12 13    14 15 16 17 18 19 20
+ * p-bit:  22 21 20 19 18 17 16    14 13 12 11 10  9  8     6  5  4  3  2  1  0
+ *
+ *
+ * This class does not contain a remove or clear single bit function.
+ * It only contains a
+ * clearData() to clear all data, an
+ * onBit() to set a specific bit and at last a
+ * writeData()
  * function, which writes all the data.
  * That's why you have to clear all Data first 'clearData()'
  * and set only the bits in your shift-registers that should be
@@ -37,6 +41,8 @@
 class SimpleSouthShifter {
 
 public:
+
+
 	/**
 	 * numRegs  Number of used shift registers. (use eg. 3 if you need 24 Pins)
 	 * pinData  is the data-Pin (you set 0 or 1 to this before
@@ -91,12 +97,12 @@ private:
 	// uses a dynamic array size:
 	bool* _logicalData  = NULL;
 	bool* _physicalData = NULL;
-	int _numLogicalPins ; // 7 * _numRegs (QA on "north" is not used.)
-	int _numPhysicalPins; // 8 * _numRegs
+	int   _numLogicalPins ; // 7 * _numRegs (QA on "north" is not used.)
+	int   _numPhysicalPins; // 8 * _numRegs
 
-	unsigned int _pinData;
+	unsigned int _pinData ;
 	unsigned int _pinSRCLK;
-	unsigned int _pinRCLK;
+	unsigned int _pinRCLK ;
 
 }; // end class SimpleSouthShifter
 

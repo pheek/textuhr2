@@ -56,8 +56,8 @@ void SimpleSouthShifter::clearData() {
  * on the shift registers..
  */
 void SimpleSouthShifter::onBit(int bitNr) {
-	if (NULL == _logicalData) { return; }
-	if (bitNr >= 0 && bitNr < _numLogicalPins) {
+	if(NULL == _logicalData) { return; }
+	if(bitNr >= 0 && bitNr < _numLogicalPins) {
 		_logicalData[bitNr] = true;
 	}
 }
@@ -70,23 +70,25 @@ void SimpleSouthShifter::onBit(int bitNr) {
  */
 void SimpleSouthShifter::writeData() {
 	// assert, if malloc failed
-	if (NULL == _logicalData)  { return; }
-	if (NULL == _physicalData) { return; }
+	if(NULL == _logicalData)  { return; }
+	if(NULL == _physicalData) { return; }
 
 	// omit each bit on the "north" (Each QA-bit)
 	int logicalIndex = _numLogicalPins - 1;
 	// i = physical index
 	for(int i = 0; i < _numPhysicalPins; i++) {
-	  // every 8th physical bit (7, 15, 23) is omitted
-		if (7 == i % 8) {
+		// every 8th physical bit (7, 15, 23) is omitted
+		if(7 == i % 8) {
 			_physicalData[i] = false;
 		} else {
 			_physicalData[i] = _logicalData[logicalIndex--];
 		}
 	}
 
+
 	digitalWrite(_pinRCLK, LOW);
 	int val;
+
 	// clock delay: Should be at least 4-5 micro-seconds.
 	//              Arduino is slower anyway, so these delays are not necessary.
 	//delay(1); // not necessary: Arduino is too slow
@@ -101,6 +103,7 @@ void SimpleSouthShifter::writeData() {
 	//delay(1);
 	digitalWrite(_pinRCLK, HIGH); // latch
 }
+
 
 /**
  * Helper method to clear all data and write them LOW to all outputs.

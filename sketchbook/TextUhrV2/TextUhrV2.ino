@@ -22,6 +22,7 @@
 // LOW  -> "ES IST" blinks with the DCF-raw signal.
 #define TIME_VISIBLE_PIN 3
 
+// pointer to myDCFRTC-Library-object
 MyDCFRTC *myDCFRTC;
 
 // Nur debug: Sodass die Zeit nicht zu oft, aber auch nicht

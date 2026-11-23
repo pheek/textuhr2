@@ -11,7 +11,7 @@
 MyDCFRTC::MyDCFRTC(int dcfPin) {
 	// Map pin number to interrupt number (typically interrupt 0 on pin 2)
 	_dcf                   = new DCF77(dcfPin, digitalPinToInterrupt(dcfPin));
-	_rtcPresent                 = false;
+	_rtcPresent            = false;
 	_state                 = STATE_UNREADY;
 	_dcfTimeValidUntil     = 0;
 	_arduinoTimeValidUntil = 0;
@@ -22,7 +22,7 @@ MyDCFRTC::MyDCFRTC(int dcfPin) {
 		_rtcPresent = true;
 	} else {
 		#ifdef DEBUG_METHOD
-		Serial.println("WARNING: DS3231 RTC not found!");
+		Serial.println("WARNING: DS3231 RTC module not found!");
 		#endif
 	}
 
