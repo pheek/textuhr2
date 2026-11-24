@@ -95,7 +95,7 @@ void debugPrintTime(int h, int m) {
 	Serial.print("debugPrintTime(): ");
 	Serial.print(h);
 	Serial.print(":");
-	if (m < 10) Serial.print("0");
+	if (m < 10) {Serial.print("0");}
 	Serial.println(m);
 }
 #endif
@@ -157,15 +157,17 @@ void showTimeIfReady() {
 	simpleSouthShifter.writeData();
 }
 
+
 /**
  * Register hours and minute-Pins to the shift registers.
  * The "writeData()" is done within the method "showTimeIfReady()".
  */
 void showHoursAndMinutes() {
 	int min  = myDCFRTC->getMinute();
-	int hour = myDCFRTC->getHour();
+	int hour = myDCFRTC->getHour()  ;
+ 
 	schalteStundenLEDs(hour, min);
-	schalteMinutenLEDs(min);
+	schalteMinutenLEDs(      min);
 }
 
 
@@ -173,7 +175,6 @@ void showHoursAndMinutes() {
  * Die folgenden Methoden sind deutsch, denn die Uhrzeit wird ja
  * auch in deutsch angezeigt.
  */
-
 void schalteStundenLEDs(int stunde, int min) {
 	if (min > 23) {
 		stunde = stunde + 1;

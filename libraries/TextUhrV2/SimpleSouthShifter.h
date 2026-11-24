@@ -83,6 +83,7 @@ public:
 	 */
 	void writeData();
 
+
 	/**
 	 * Clear all Bits
 	 */

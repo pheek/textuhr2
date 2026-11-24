@@ -32,7 +32,7 @@
  * Interval in milliseconds to sync the RTC time into Arduino TimeLib.
  * Important because getHour() and getMinute() read from Arduino TimeLib.
  */
-#define SAVE_RTC_TO_ARDUINO_TIME_EVERY_X_MS 120000UL // two minutes
+#define SAVE_RTC_TO_ARDUINO_TIME_EVERY_X_MS 300000UL // fife minutes
 
 #define MIN_YEAR 2026
 
@@ -48,16 +48,28 @@ public:
 	// Constructor with pin connected to the DCF77 signal
 	MyDCFRTC(int dcfPin);
 
+
+	/**
+	 * periodically update the states and the clocks:
+	 *  > get dcf time
+	 *  > if dcf time valid: set to RTC
+	 *  > copy RTC to internal arduino time
+	 *  > re-evaluate the state (UNREADY, FRESH, EXPIRED)
+	 */
 	void update();
+
 
 	// True when a time should be displayed (STATE_RTC_FRESH or STATE_RTC_EXPIRED)
 	bool hasValidTime();
 
+
 	// True only in STATE_RTC_FRESH ("ES IST" steadily on, no DCF blinking)
 	bool isRtcFresh();
 
+
 	// Returns 1..12
 	int getHour();
+
 
 	// Returns 0..59
 	int getMinute();
