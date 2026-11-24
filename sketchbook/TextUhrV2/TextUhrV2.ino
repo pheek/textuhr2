@@ -109,7 +109,7 @@ void loop() {
 	if (myDCFRTC->isRtcFresh()) {
 		digitalWrite(TIME_VISIBLE_PIN, HIGH);
 	} else {
-		digitalWrite(TIME_VISIBLE_PIN, LOW);
+		digitalWrite(TIME_VISIBLE_PIN, LOW );
 	}
 
 	// 2. Show time (if RTC has a valid time, even if it is not fresh)
