@@ -76,7 +76,7 @@ void MyDCFRTC::handleCorrectDCFSignalAndSetState(time_t correctDCFTime) {
 		_rtc.adjust(DateTime((uint32_t)dcfUnix));
 	}
 
-	_dcfTimeValidUntil     = dcfUnix + DCF_MAX_VALID_SECS;
+	_dcfTimeValidUntil     = dcfUnix  + DCF_MAX_VALID_SECS;
 	_arduinoTimeValidUntil = millis() + SAVE_RTC_TO_ARDUINO_TIME_EVERY_X_MS;
 
 	#ifdef DEBUG_METHOD
@@ -84,6 +84,17 @@ void MyDCFRTC::handleCorrectDCFSignalAndSetState(time_t correctDCFTime) {
 	#endif
 
 	setState(dcfUnix);
+}
+
+
+void MyDCFRTC::pushRTC_2_internalArduinoTime() {
+	if (_rtcPresent && (_dcfTimeValidUntil > 0) && ((long)(millis() - _arduinoTimeValidUntil) >= 0)) {
+		DateTime rtcNow = _rtc.now();
+		if (rtcNow.year() >= MIN_YEAR) {
+			setTime((time_t)rtcNow.unixtime());
+		}
+		_arduinoTimeValidUntil = millis() + SAVE_RTC_TO_ARDUINO_TIME_EVERY_X_MS;
+	}
 }
 
 
@@ -96,15 +107,9 @@ void MyDCFRTC::update() {
 		return;
 	}
 
-	// 2. Periodically pull current time from DS3231 RTC into Arduino TimeLib
-	if (_rtcPresent && (_dcfTimeValidUntil > 0) && ((long)(millis() - _arduinoTimeValidUntil) >= 0)) {
-		_arduinoTimeValidUntil = millis() + SAVE_RTC_TO_ARDUINO_TIME_EVERY_X_MS;
-		DateTime rtcNow = _rtc.now();
-		if (rtcNow.year() >= MIN_YEAR) {
-			setTime((time_t)rtcNow.unixtime());
-		}
-	}
-
+	// 2. Periodically push RTC (DS3231) time to ardunios internal time
+	pushRTC_2_internalArduinoTime();
+	
 	// 3. Re-evaluate state using current Unix time
 	setState(currentUnixTime());
 }

@@ -100,6 +100,16 @@ private:
 
 
 	/**
+	 * Check, if RTC has correct time and if it is due to push
+	 * the RTC Time to the interanlArduino time.
+	 * If so, get from RTC (DS3231) and push to internal Adruino time.
+	 * This is important, because "getMinute()" and "getHour()" get their
+	 * time from the arduino.
+	 */
+	void pushRTC_2_internalArduinoTime();
+
+
+	/**
 	 * Handle a newly received valid DCF timestamp:
 	 * - Update Arduino TimeLib time
 	 * - Update DS3231 RTC time
