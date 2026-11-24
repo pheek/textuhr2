@@ -23,9 +23,9 @@
  * (keeping the time displayed while enabling DCF blink indication).
  */
 #ifdef DEBUG_METHOD
-	#define DCF_MAX_VALID_SECS (2UL * 60UL * 60UL)         // 2 hours
+	#define DCF_MAX_VALID_SECS (4UL * 60UL * 60UL)         // 4 hours
 #else
-	#define DCF_MAX_VALID_SECS (14UL * 24UL * 60UL * 60UL) // 2 weeks
+	#define DCF_MAX_VALID_SECS (28UL * 24UL * 60UL * 60UL) // 4 weeks
 #endif
 
 /**
