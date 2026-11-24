@@ -10,15 +10,6 @@
 #include <Arduino.h>
 
 
-/**
- * numRegs  Number of physical shift registers.
- * pinData  Data: is the data-Pin (you set 0 or 1 to this before
- *          calling the clock).
- * pinSRCLK Clock: registers the data for the next latch.
- *          nothing happens to the pins befor the latch (RCLK)
- * pinRCLK  Latch: If this is set to high, all data
- *          will be sent to the outputs.
- */
 SimpleSouthShifter::SimpleSouthShifter(int numRegs, int pinData, int pinSRCLK, int pinRCLK) {
 	_numRegs         = numRegs     ;
 	_numLogicalPins  = 7 * _numRegs;
@@ -36,12 +27,6 @@ SimpleSouthShifter::SimpleSouthShifter(int numRegs, int pinData, int pinSRCLK, i
 }
 
 
-/**
- * Clear all bits.
- * Attention: This does not clear write out to the pins:
- * After calling clearData you shoud write some new data (ssh_onBit())
- * and at last shift them out using ssh_writeData().
- */
 void SimpleSouthShifter::clearData() {
 	if(NULL == _logicalData) { return; }
 	for(int i = _numLogicalPins - 1; i >= 0; i = i - 1) {
@@ -50,11 +35,6 @@ void SimpleSouthShifter::clearData() {
 }
 
 
-/**
- * Enables a logical bit in a _logicalData - Array.
- * Call writeData() to effectively shift the data out to the physical Pins
- * on the shift registers..
- */
 void SimpleSouthShifter::onBit(int bitNr) {
 	if(NULL == _logicalData) { return; }
 	if(bitNr >= 0 && bitNr < _numLogicalPins) {
@@ -63,11 +43,6 @@ void SimpleSouthShifter::onBit(int bitNr) {
 }
 
 
-/**
- * Schreibe alle Daten in die Shift-Register.
- * Sobald alle Daten geschrieben sind, weise die Register an,
- * die Daten auch anzuzeigen (SHIFT_RCLK_PIN).
- */
 void SimpleSouthShifter::writeData() {
 	// assert, if malloc failed
 	if(NULL == _logicalData)  { return; }
@@ -105,9 +80,6 @@ void SimpleSouthShifter::writeData() {
 }
 
 
-/**
- * Helper method to clear all data and write them LOW to all outputs.
- */
 void SimpleSouthShifter::writeAllZeros() {
 	clearData();
 	writeData();

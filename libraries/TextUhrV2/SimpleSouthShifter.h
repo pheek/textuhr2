@@ -45,19 +45,18 @@ public:
 
 	/**
 	 * numRegs  Number of used shift registers. (use eg. 3 if you need 24 Pins)
-	 * pinData  is the data-Pin (you set 0 or 1 to this before
-	 *          calling the clock).
-	 * pinSRCLK registers the data for the next latch.
-	 *          nothing happens to the pins befor the latch (RCLK)
-	 * pinRCLK  is the latch. If this is set to high, all data
-	 *          will be sent to the outputs.
+	 * pinData  [Data ]-Pin: You set 0 or 1 to this before calling the clock.
+	 * pinSRCLK [Clock]-Pin: registers the data for the next latch.
+	 *                       nothing happens to the pins befor the latch (RCLK)
+	 * pinRCLK  [Latch]-Pin: If this is set to high, all data
+	 *                       will be sent to the outputs.
 	 */
 	SimpleSouthShifter(int numRegs, int pinData, int pinSRCLK, int pinRCLK);
 
 
 	/**
 	 * Clear all bits.
-	 * Attention: This does not clear write out to the pins:
+	 * Attention: clearData() does not write out to the pins:
 	 * After calling clearData you shoud write some new data (onBit())
 	 * and at last shift them out using writeData().
 	 *
@@ -74,18 +73,21 @@ public:
 	/**
 	 * Enables a bit.
 	 * Call writeData() to effectively shift the data out.
+	 * This only registers in an array, what should be shifted later on.
 	 */
 	void onBit(int bitNr);
 
 
 	/**
-	 * Write all stored bits to the shift registers.
+	 * Write oll to the logical pins (south) on the shift registert (see above).
+	 * Data ist written via SHIFT_RCLK_PIN.
 	 */
 	void writeData();
 
 
 	/**
-	 * Clear all Bits
+	 * Clear all Bits: This helper method clears all data
+	 * and write them LOW to all outputs.
 	 */
 	void writeAllZeros();
 
