@@ -60,9 +60,9 @@ void MyDCFRTC::setState(uint64_t nowUnix) {
 	#ifdef DEBUG_METHOD
 	if (_state != prevState) {
 		Serial.print("State -> ");
-		if (_state == STATE_UNREADY)        Serial.println("STATE_UNREADY (no time, DCF blinking)");
-		else if (_state == STATE_RTC_FRESH) Serial.println("STATE_RTC_FRESH (time on, ES IST steady)");
-		else                                Serial.println("STATE_RTC_EXPIRED (time on + DCF blinking)");
+		if      (_state == STATE_UNREADY)   { Serial.println("STATE_UNREADY     (no time, DCF blinking)" );}
+		else if (_state == STATE_RTC_FRESH) { Serial.println("STATE_RTC_FRESH   (time on, ES IST steady)");}
+		else                                { Serial.println("STATE_RTC_EXPIRED (time on + DCF blinking)");}
 	}
 	#endif
 }
@@ -70,8 +70,10 @@ void MyDCFRTC::setState(uint64_t nowUnix) {
 
 void MyDCFRTC::handleCorrectDCFSignalAndSetState(time_t correctDCFTime) {
 	uint64_t dcfUnix = (uint64_t)correctDCFTime;
-	setTime(correctDCFTime); // Sync Arduino TimeLib clock with DCF time
 
+	// Sync DCF to Arduinos internal time:
+	setTime(correctDCFTime);
+	// Sync DCF to RealtimeClock
 	if (_rtcPresent) {
 		_rtc.adjust(DateTime((uint32_t)dcfUnix));
 	}
